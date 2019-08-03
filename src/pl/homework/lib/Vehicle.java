@@ -38,8 +38,12 @@ public class Vehicle {
         this.mileage = mileage;
     }
 
+    public double realMileage() {
+        return getMileage();
+    }
+
     public double range() {
-        return  petrolTank*100/getMileage();
+        return  petrolTank*100/realMileage();
     }
 
     @Override

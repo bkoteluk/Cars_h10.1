@@ -22,7 +22,12 @@ public class Car extends Vehicle {
 
     @Override
     public double getMileage() {
-        return super.getMileage() + (ac ? 0.5: 0);
+        return super.getMileage();
+    }
+
+    @Override
+    public double realMileage() {
+        return super.realMileage() +  (ac ? Engine.countCarAcCharge() : 0);
     }
 
     @Override

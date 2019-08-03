@@ -9,7 +9,7 @@ public class CarsTest {
     private static void printInfo(Vehicle[] vehicles) {
         for (Vehicle vehicle : vehicles) {
             System.out.print(vehicle);
-            System.out.println(" >>> zasięg pojazdu : (" + vehicle.getMileage() + "l/100km) " + vehicle.range());
+            System.out.println(" >>> zasięg pojazdu : (" + vehicle.realMileage() + "l/100km) " + vehicle.range());
         }
     }
 
