@@ -27,6 +27,7 @@ public class Car extends Vehicle {
 
     @Override
     public double getMileage() {
+
         return super.getMileage();
     }
 
@@ -36,11 +37,6 @@ public class Car extends Vehicle {
         return getMileage() + (ac ? CHARGE_AC_CAR : 0);
     }
 
-    @Override
-    public double range() {
-
-        return super.range();
-    }
 
     @Override
     public String toString() {

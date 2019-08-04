@@ -50,6 +50,7 @@ public class Vehicle {
     }
 
     public double range() {
+
         return  petrolTank*100/realMileage();
     }
 

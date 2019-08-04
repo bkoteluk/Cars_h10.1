@@ -26,18 +26,16 @@ public class Truck extends Car {
 
     @Override
     public double getMileage() {
+
         return super.getMileage();
     }
 
     @Override
     public double realMileage() {
+
         return getMileage() + (isAc() ? CHARGE_AC_TRUCK  : 0) + cargo*CHARGE_CARGO/100;
     }
 
-    @Override
-    public double range() {
-        return super.range();
-    }
 
     @Override
     public String toString() {
