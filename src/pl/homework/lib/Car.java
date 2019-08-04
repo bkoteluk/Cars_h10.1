@@ -1,6 +1,8 @@
 package pl.homework.lib;
 
 public class Car extends Vehicle {
+    public static final double CHARGE_AC_CAR = 0.8;
+
     private boolean ac;
 
 
@@ -13,10 +15,13 @@ public class Car extends Vehicle {
     }
 
     public boolean isAc() {
+
         return ac;
+
     }
 
     public void setAc(boolean ac) {
+
         this.ac = ac;
     }
 
@@ -27,16 +32,19 @@ public class Car extends Vehicle {
 
     @Override
     public double realMileage() {
-        return super.realMileage() +  (ac ? Engine.countCarAcCharge() : 0);
+
+        return getMileage() + (ac ? CHARGE_AC_CAR : 0);
     }
 
     @Override
     public double range() {
+
         return super.range();
     }
 
     @Override
     public String toString() {
+
         return super.toString() + " | AC: " + (ac ? "ON" : "OFF");
     }
 }

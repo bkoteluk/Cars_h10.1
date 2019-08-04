@@ -15,30 +15,37 @@ public class Vehicle {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public int getPetrolTank() {
+
         return petrolTank;
     }
 
     public void setPetrolTank(int petrolTank) {
+
         this.petrolTank = petrolTank;
     }
 
     public double getMileage() {
+
         return mileage;
     }
 
     public void setMileage(double mileage) {
+
         this.mileage = mileage;
     }
 
     public double realMileage() {
+
         return getMileage();
     }
 
@@ -48,6 +55,7 @@ public class Vehicle {
 
     @Override
     public String toString() {
+
         return ">>> " + name + " | bak(l): " + petrolTank + " | spalanie(l/100km): " + mileage;
     }
 }

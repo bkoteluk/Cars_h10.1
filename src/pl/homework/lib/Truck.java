@@ -1,6 +1,9 @@
 package pl.homework.lib;
 
 public class Truck extends Car {
+    public static final double CHARGE_AC_TRUCK = 1.6;
+    public static final double CHARGE_CARGO = 0.5;
+
     private double cargo;
 
     public Truck() {
@@ -12,10 +15,12 @@ public class Truck extends Car {
     }
 
     public double getCargo() {
+
         return cargo;
     }
 
     public void setCargo(double cargo) {
+
         this.cargo = cargo;
     }
 
@@ -26,7 +31,7 @@ public class Truck extends Car {
 
     @Override
     public double realMileage() {
-        return super.realMileage() + (super.isAc() ? Engine.countTrackAcCharge() : 0) + Engine.countCargoCharge(cargo);
+        return getMileage() + (isAc() ? CHARGE_AC_TRUCK  : 0) + cargo*CHARGE_CARGO/100;
     }
 
     @Override
@@ -36,6 +41,7 @@ public class Truck extends Car {
 
     @Override
     public String toString() {
+
         return super.toString() + " | załadunek(kg) : " + cargo;
     }
 }
