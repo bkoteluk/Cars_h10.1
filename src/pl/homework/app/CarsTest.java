@@ -15,9 +15,9 @@ public class CarsTest {
 
     private static void setVehicles(Vehicle[] vehicles) {
         vehicles[0] = new Vehicle("Automobil", 35, 11);
-        vehicles[1] = new Car("Alfa", 50, 9, false);
-        vehicles[2] = new Truck("Hillux", 75, 16, false, 250);
-        vehicles[3] = new Truck("Sprinter", 60, 14, false, 360);
+        vehicles[1] = new Car("Alfa", 60, 14, false);
+        vehicles[2] = new Truck("Hillux", 75, 16, false, 540);
+        vehicles[3] = new Truck("Sprinter", 60, 14, false, 100);
         vehicles[4] = new Car("Astra", 45, 7.5, false);
     }
 

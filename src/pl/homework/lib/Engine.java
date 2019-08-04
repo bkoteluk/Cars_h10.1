@@ -1,7 +1,7 @@
 package pl.homework.lib;
 
 public class Engine {
-    private static final double CHARGE_AC_CAR = 0.5;
+    private static final double CHARGE_AC_CAR = 0.8;
     private static final double CHARGE_AC_TRUCK = 1.6;
     private static final double CHARGE_CARGO = 0.5;
 
