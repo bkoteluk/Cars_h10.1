@@ -26,12 +26,6 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public double getMileage() {
-
-        return super.getMileage();
-    }
-
-    @Override
     public double realMileage() {
 
         return getMileage() + (ac ? CHARGE_AC_CAR : 0);
